@@ -47,7 +47,7 @@ const Footer = () => {
 
           <div className="text-center mt-4 pt-2">
       <p className="footer-copy">
-    &copy; {new Date().getFullYear()} BAX Consulting Group. All rights reserved |{" "}
+    &copy; {new Date().getFullYear()} BAX Consulting Group. All rights reserved |{" "}Developed By
     <a
       href="https://socialsimba.com/"
       target="_blank"
