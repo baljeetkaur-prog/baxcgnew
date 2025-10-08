@@ -47,16 +47,7 @@ const Footer = () => {
 
           <div className="text-center mt-4 pt-2">
       <p className="footer-copy">
-    &copy; {new Date().getFullYear()} BAX Consulting Group. All rights reserved |{" "}Developed By
-    <a
-      href="https://socialsimba.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="footer-design"
-      style={{ fontWeight: "600", color:"#E63946" }}
-    >
-      Social Simba
-    </a>
+    &copy; {new Date().getFullYear()} BAX Consulting Group. All rights reserved |{" "}Developed By <a href="https://socialsimba.com/" target="_blank" rel="noopener noreferrer" className="footer-design" style={{ fontWeight: "600", color:"#E63946" }}>Social Simba</a>
   </p>
           </div>
         </div>
