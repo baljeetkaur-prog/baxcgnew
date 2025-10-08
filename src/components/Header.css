@@ -1,0 +1,97 @@
+/* Custom Close Icon (red ×) */
+.custom-close-icon {
+  font-size: 2rem;
+  color: #f52029;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Custom Hamburger Icon */
+.navbar-toggler {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+  left: 0;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+  left: 0;
+}
+
+@media (max-width: 576px) {
+  /* Smaller hamburger lines */
+  .navbar-toggler {
+    width: 40px; /* keep same container size */
+    height: 40px;
+  }
+
+  .navbar-toggler-icon {
+    width: 18px;
+    height: 2px;
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    width: 18px;
+  }
+
+  .navbar-toggler-icon::before {
+    top: -6px;
+  }
+
+  .navbar-toggler-icon::after {
+    top: 6px;
+  }
+
+  /* Smaller close icon */
+  .custom-close-icon {
+    font-size: 1.3rem;
+  }
+}
+.navbar-toggler-icon {
+  background-color: black;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  background-color: black;
+}
+
+/* Dark Mode Support */
+html[data-theme='dark'] .navbar-toggler-icon,
+html[data-theme='dark'] .navbar-toggler-icon::before,
+html[data-theme='dark'] .navbar-toggler-icon::after {
+  background-color: white;
+}
+
+
+

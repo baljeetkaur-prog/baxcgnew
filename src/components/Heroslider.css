@@ -1,0 +1,100 @@
+.video-hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Content box on top of video */
+.overlay-content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--heading-color, #fff);
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly darker for better visibility */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Slightly stronger shadow */
+  backdrop-filter: blur(4px); /* Optional: adds blur effect behind text */
+  z-index: 2;
+}
+
+/* Heading styles */
+.overlay-content h6 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.overlay-content h3 {
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* -----------------------------------
+   RESPONSIVE MEDIA QUERIES
+----------------------------------- */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 991px) {
+  .overlay-content {
+    padding: 1.5rem;
+  }
+
+  .overlay-content h3 {
+    font-size: 28px;
+  }
+
+  .overlay-content h6 {
+    font-size: 15px;
+  }
+
+  .video-hero-container {
+    height: 80vh;
+  }
+}
+
+/* Small Screens (Mobiles) */
+@media (max-width: 576px) {
+  .overlay-content {
+    padding: 1rem;
+    top:65%; 
+  }
+
+  .overlay-content h3 {
+    font-size: 22px;
+  }
+
+  .overlay-content h6 {
+    font-size: 13px;
+  }
+
+  .video-hero-container {
+    height: 70vh;
+  }
+
+  .btn.btn-style {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
